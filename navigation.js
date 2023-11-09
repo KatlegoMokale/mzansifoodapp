@@ -6,6 +6,9 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import HomeScreen from './screens/HomeScreen';
 import ResturantScreen from './screens/ResturantScreen';
+import CartScreen from './screens/CartScreen';
+import OrderPreparingScreen from './screens/OrderPreparingScreen';
+import DeliveryScreen from './screens/DeliveryScreen';
 
 export default function Navigation() {
   return (
@@ -15,6 +18,9 @@ export default function Navigation() {
     }}>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Resturant" component={ResturantScreen} />
+      <Stack.Screen name="Cart" options={{presentation:'modal'}} component={CartScreen} />
+      <Stack.Screen name="OrderPreparing" options={{presentation:'fullScreenModal'}} component={OrderPreparingScreen} />
+      <Stack.Screen name="Delivery" options={{presentation:'fullScreenModal'}} component={DeliveryScreen} />
     </Stack.Navigator>
   </NavigationContainer>
   )
