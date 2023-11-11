@@ -33,118 +33,348 @@ export const categories = [
 ]
 
 
-export const featured = {
+export const featured = [
+  {
     id: 1,
-    title: 'Hot and Spicy',
-    description: 'soft and tender fried chicken',
+    title: "Hot and Spicy",
+    description: "soft and tender fried chicken",
+    specialty: "Chicken",
     restaurants: [
-        {
+      {
+        id: 1,
+        name: "Bobby Chicken Tikka",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        dishes: [
+          {
             id: 1,
-            name: 'Papa Johns',
-            image: require('../assets/images/pizza.png'),
-            description: 'Hot and spicy pizzas',
-            lng: -85.5324269,
-            lat: 38.2145602,
-            address: '434 second street',
-            stars: 4,
-            reviews: '4.4k',
-            category: 'Fast Food',
-            dishes: [
-                {
-                   id: 1,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 2,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 3,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-            ]
-    
-        },
-        {
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
             id: 2,
-            name: 'Papa Johns',
-            image: require('../assets/images/pizza.png'),
-            description: 'Hot and spicy pizzas',
-            lng: -85.5324269,
-            lat: 38.2145602,
-            address: '434 second street',
-            stars: 4,
-            reviews: '4.4k',
-            category: 'Fast Food',
-            dishes: [
-                {
-                   id: 1,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 2,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 3,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-            ]
-    
-        },
-        {
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
             id: 3,
-            name: 'Papa Johns',
-            image: require('../assets/images/pizza.png'),
-            description: 'Hot and spicy pizzas',
-            lng: -85.5324269,
-            lat: 38.2145602,
-            address: '434 second street',
-            stars: 4,
-            reviews: '4.4k',
-            category: 'Fast Food',
-            dishes: [
-                {
-                   id: 1,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 2,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-                {
-                   id: 3,
-                   name: 'pizza',
-                   description: 'cheezy garlic pizza',
-                   price: 10,
-                   image:  require('../assets/images/pizzaDish.png')
-                },
-            ]
-    
-        }
-    ]
-}
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Papa Johns",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Kasi Chicken Dust",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Bobby Chicken Tikka",
+    description: "Grilled Chicken",
+    specialty: "Chicken",
+    restaurants: [
+      {
+        id: 1,
+        name: "Bobby Chicken Tikka",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lat: -26.6212857,
+        lng: 27.9390072,
+        address: "19 Andesite Ave, Waldrift",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Papa Johns",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        specialty: "Burgers",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Kasi Chicken Dust",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        specialty: "Chicken",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Mamas Kitchen",
+    description: "Home made South African dishes",
+    specialty: "Meals",
+    restaurants: [
+      {
+        id: 1,
+        name: "Bobby Chicken Tikka",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Papa Johns",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        specialty: "Burgers",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Kasi Chicken Dust",
+        image: require("../assets/images/pizza.png"),
+        description: "Hot and spicy pizzas",
+        lng: -85.5324269,
+        lat: 38.2145602,
+        address: "434 second street",
+        stars: 4,
+        reviews: "4.4k",
+        category: "Fast Food",
+        specialty: "Chicken",
+        dishes: [
+          {
+            id: 1,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 2,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+          {
+            id: 3,
+            name: "pizza",
+            description: "cheezy garlic pizza",
+            price: 10,
+            image: require("../assets/images/pizzaDish.png"),
+          },
+        ],
+      },
+    ],
+  },
+];

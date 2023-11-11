@@ -7,7 +7,7 @@ import { themeColors } from '../theme';
 import * as Icon from 'react-native-feather';
 
 export default function DeliveryScreen() {
-    const restaurant = featured.restaurants[0];
+    const restaurant = featured[1].restaurants[0];
     const nagivation = useNavigation();
   return (
     <View className="flex-1">

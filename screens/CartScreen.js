@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function CartScreen() {
     const nagivation = useNavigation();
-    const restaurant = featured.restaurants[0];
-    // console.log(resturant);
+    const restaurant = featured[1].restaurants[0];
+    console.log(restaurant);
   return (
     <View className=" bg-white flex-1">
       {/* Back Button */}

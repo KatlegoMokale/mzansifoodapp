@@ -42,7 +42,7 @@ export default function HomeScreen() {
         {/* featured */}
         <View className="mt-5"> 
         {
-          [featured, featured, featured].map((item, index)=>{
+          featured.map((item, index)=>{
            return (
             <FeaturedRow 
             key={index}
@@ -52,6 +52,17 @@ export default function HomeScreen() {
            )
           })
         }
+        {/* {
+          [featured].map((item, index)=>{
+            return item.specialty == "Chicken" ? (
+            <FeaturedRow 
+            key={index}
+            title={item.title}
+            resturants={item.restaurants}
+            description={item.description}/>
+           ):<Text>{item.specialty}</Text>;
+          })
+        } */}
         </View>
 
       </ScrollView>
